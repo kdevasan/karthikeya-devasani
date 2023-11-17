@@ -1,0 +1,97 @@
+body {
+    background-color: rgba(226, 255, 255, 255);
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(5, 110, 5)
+}
+
+p {
+   
+    /* text-align: center; */
+
+}
+
+img {
+    width: 600px;
+    height: 400px;
+    border : 0;
+    
+}
+
+.contact {
+    text-align: center;
+    color: rgb(31, 128, 31);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    padding: 4px;
+}
+
+a:visited {
+    color: rgb(5, 110, 5);
+    text-decoration: none;
+}
+
+
+
+.row {
+   /* background-color: rgba(184,250,237,255); */
+    width: 80%;
+    max-width:1170px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px 30px;
+}
+
+.row.left {
+    overflow:hidden;
+}
+
+.row.left img{
+  
+
+}
+
+.row.right{
+    display: flex;
+    align-items: center;
+}
+
+.row.right.content{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.row.right.content p{
+    line-height: 26px;
+    padding-bottom: 15px;
+    font-weight: 700;
+   
+}
+
+.portfo{
+    padding-left: 20ch;
+    width: 50ch;
+    height: 75ch;
+}
+
+footer{
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.main{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 15ch;
+}

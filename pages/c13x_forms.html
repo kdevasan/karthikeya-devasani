@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid #4A63C6;
+		}
+		h1 {
+			color: #4A63C6; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: #4A63C6;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: #A9EEF5;
+			box-shadow: 2px 2px 0 #6AB0E2; }
+		#button {
+			margin-left: 9em;
+		}
+	</style>
+</head>
+
+<body>
+<h1>Please complete our survey</h1>
+<form name="myform" action="survey_data.html" method="get">
+	<hr style="border-top: dotted 4px; color: #6bafe0;" />
+	<h2>Contact information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email"><br>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname"><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname"><br>
+	<hr style="border-top: dotted 4px; color: #6AB0E2;" />
+	<h2>Geographic inforamtion</h2>
+	<label for="state">State</label>
+	<input type="text" value="Two Characters" style="opacity: .5;"  pattern="[A-Za-z]{2}"id="state"><br>
+	<label for="Zipcode">Zip Code:</label>
+    <input type="text" value="Five Digits" style="opacity: .5;" pattern="\d{5}" max='5'id="Zipcode"><br>
+	<hr style="border-top: dotted 4px; color: #6AB0E2;" />
+	<h2>How did you hear from us?</h2>
+	<label>Web Search</label>
+	<input type="checkbox"><br>
+	<label>Facebook</label>
+	<input type="checkbox"><br>
+	<label>Twitter</label>
+	<input type="checkbox"><br>
+	<label>Email Message</label>
+	<input type="checkbox"><br>
+
+	<hr style="border-top: dotted 4px; color: #6bafe0;" />
+
+    
+    <h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+</body>
+</html>
